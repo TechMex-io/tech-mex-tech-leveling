@@ -17,4 +17,4 @@ make sure you have `nodemon` installed globally:
 
 `$ npm install -g nodemon`
 
-then run `nodemon app.js`
+then run `mocha `
