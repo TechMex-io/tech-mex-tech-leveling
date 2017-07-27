@@ -61,3 +61,8 @@ module.exports.removeDuplicate = (arr) => {
   }
   return deduped;
 }
+
+
+module.exports.mergeSortedArray = (arr1, arr2) => {
+  return arr;
+}

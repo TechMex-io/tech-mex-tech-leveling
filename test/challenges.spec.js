@@ -66,5 +66,15 @@ describe('Tech-Mex Tech Leveling', function () {
     const deduped = funcs.removeDuplicate(given);
 
     assert.deepEqual(expected, deduped);
-  })
+  });
+
+  it('should merge two sorted arrays', function () {
+    const given1 = [2,5,6,9];
+    const given2 = [1,2,3,29];
+    const expected = [1, 2, 2, 3, 5, 6, 9, 29];
+
+    const mergedAndSorted = funcs.mergeSortedArray(given1, given2);
+    
+    assert.deepEqual(expected, mergedAndSorted);
+  });
 });
