@@ -22,3 +22,8 @@ module.exports.isPrime = (num) => {
 module.exports.removeDuplicate = (arr) => {
   return arr;
 }
+
+
+module.exports.mergeSortedArray = (arr1, arr2) => {
+  return arr;
+}
