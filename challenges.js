@@ -50,3 +50,14 @@ module.exports.isPrime = (num) => {
   }
   return true;
 }
+
+
+module.exports.removeDuplicate = (arr) => {
+  const deduped = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (deduped.indexOf(arr[i]) === -1) {
+      deduped.push(arr[i]);
+    }
+  }
+  return deduped;
+}

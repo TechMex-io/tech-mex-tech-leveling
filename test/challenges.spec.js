@@ -58,4 +58,13 @@ describe('Tech-Mex Tech Leveling', function () {
 
     assert.equal(expected, verifyIsPrime);
   });
+  
+  it('should remove all duplicates from array', function () {
+    const given = [2,3,3,4,4,5,6];
+    const expected = [2,3,4,5,6];
+
+    const deduped = funcs.removeDuplicate(given);
+
+    assert.deepEqual(expected, deduped);
+  })
 });
