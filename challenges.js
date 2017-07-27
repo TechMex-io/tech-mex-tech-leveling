@@ -64,5 +64,8 @@ module.exports.removeDuplicate = (arr) => {
 
 
 module.exports.mergeSortedArray = (arr1, arr2) => {
-  return arr;
+  function sortNumber(a,b) {
+    return a - b;
+  }
+  return arr1.concat(arr2).sort(sortNumber);
 }
