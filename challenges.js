@@ -40,6 +40,11 @@ module.exports.isPrime = (num) => {
       allDivisors.push(i);
     }
   }
+  // return all prime factors
+  /* allDivisors.shift();
+  allDivisors.pop();
+  return allDivisors; */
+
   if (allDivisors.length > 2) {
     return false;
   }
