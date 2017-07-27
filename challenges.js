@@ -1,5 +1,16 @@
 module.exports.findLongestWord = (str) => {
-  return str;
+  const strArray = str.split(' ');
+
+  const numArray = [];
+  strArray.forEach(function(i) {
+    numArray.push(i.length);
+  });
+  const largest = Math.max.apply(Math, numArray);
+
+  return strArray.filter(function (word) {
+    return word.length === largest;
+  }).join('');
+
 };
 
 module.exports.duplicate = (arr) => {
