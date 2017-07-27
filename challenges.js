@@ -13,3 +13,7 @@ module.exports.addTwo = function addTwo() {
   return 4 + 5;
 }
 
+module.exports.isPrime = (num) => {
+  // a prime number is only divisible by itself and 1.
+  return num;
+}
