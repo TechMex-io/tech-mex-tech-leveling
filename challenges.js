@@ -67,5 +67,6 @@ module.exports.mergeSortedArray = (arr1, arr2) => {
   function sortNumber(a,b) {
     return a - b;
   }
-  return arr1.concat(arr2).sort(sortNumber);
+  // return arr1.concat(arr2).sort(sortNumber);
+  return arr1.concat(arr2).sort((a,b) => a - b);
 }
