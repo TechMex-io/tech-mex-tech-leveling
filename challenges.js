@@ -17,3 +17,8 @@ module.exports.isPrime = (num) => {
   // a prime number is only divisible by itself and 1.
   return num;
 }
+
+
+module.exports.removeDuplicate = (arr) => {
+  return arr;
+}
