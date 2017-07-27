@@ -14,7 +14,7 @@ module.exports.findLongestWord = (str) => {
 };
 
 module.exports.duplicate = (arr) => {
-  return arr;
+  return arr.concat(arr);
 }
 
 // using fat arrow does not allow access to `argumets` obj
