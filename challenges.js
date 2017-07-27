@@ -34,5 +34,14 @@ module.exports.addTwo = function addTwo() {
 
 module.exports.isPrime = (num) => {
   // a prime number is only divisible by itself and 1.
-  return num;
+  const allDivisors = [];
+  for (var i = num; i >= 1; i--) {
+    if (num % i === 0) {
+      allDivisors.push(i);
+    }
+  }
+  if (allDivisors.length > 2) {
+    return false;
+  }
+  return true;
 }

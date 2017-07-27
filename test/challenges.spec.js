@@ -49,4 +49,13 @@ describe('Tech-Mex Tech Leveling', function () {
 
     assert.equal(expected, verifyIsPrime);
   });
+
+  it('should verify is not a prime number', function () {
+    const given = 4;
+    const expected = false;
+
+    const verifyIsPrime = funcs.isPrime(given);
+
+    assert.equal(expected, verifyIsPrime);
+  });
 });
