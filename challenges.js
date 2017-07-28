@@ -27,3 +27,9 @@ module.exports.removeDuplicate = (arr) => {
 module.exports.mergeSortedArray = (arr1, arr2) => {
   return arr;
 }
+
+
+
+module.exports.rot13 = (str) => {
+  return str;
+}
