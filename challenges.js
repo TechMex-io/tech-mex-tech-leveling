@@ -87,3 +87,14 @@ module.exports.rot13 = (str) => {
   return deciphered.join('');
 
 }
+
+
+
+module.exports.findElement = (arr, func) => {
+  const num = arr.filter(function (n) {
+    return func(n);
+  });
+  return (num.length > 0) ? num.slice(0,1).join('') : undefined;
+}
+
+

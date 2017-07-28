@@ -2,5 +2,6 @@ const funcs = require('./challenges');
 
 console.log(
   // funcs.findLongestWord("The quick brown fox jumped over the lazy dog")
-  funcs.rot13('GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.')
+  funcs.findElement([1, 2, 3, 4], function(num){ return num % 2 === 0; })
+  // funcs.findElement([1, 3, 5, 9], function(num) { return num % 2 === 0; })
 );
