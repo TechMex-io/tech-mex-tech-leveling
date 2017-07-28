@@ -70,3 +70,9 @@ module.exports.mergeSortedArray = (arr1, arr2) => {
   // return arr1.concat(arr2).sort(sortNumber);
   return arr1.concat(arr2).sort((a,b) => a - b);
 }
+
+
+
+module.exports.rot13 = (str) => {
+  return str;
+}
