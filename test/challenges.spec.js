@@ -68,4 +68,13 @@ describe('Tech-Mex Tech Leveling', function () {
     
     assert.deepEqual(expected, mergedAndSorted);
   });
+
+  it('should decipher the string shifting each letter by 13', function () {
+    const given = 'GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.';
+    const expected = 'THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX.';
+
+    const deciphered =funcs.rot13(given);
+
+    assert.equal(expected, given);
+  });
 });
