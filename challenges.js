@@ -33,3 +33,7 @@ module.exports.mergeSortedArray = (arr1, arr2) => {
 module.exports.rot13 = (str) => {
   return str;
 }
+
+module.exports.findElement = (arr, func) => {
+  return num;
+}
