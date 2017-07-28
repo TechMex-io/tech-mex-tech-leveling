@@ -82,8 +82,8 @@ describe('Tech-Mex Tech Leveling', function () {
     const given = 'GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.';
     const expected = 'THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX.';
 
-    const deciphered =funcs.rot13(given);
+    const deciphered = funcs.rot13(given);
 
-    assert.equal(expected, given);
+    assert.equal(expected, deciphered);
   });
 });

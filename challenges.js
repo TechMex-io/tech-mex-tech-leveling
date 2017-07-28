@@ -74,5 +74,16 @@ module.exports.mergeSortedArray = (arr1, arr2) => {
 
 
 module.exports.rot13 = (str) => {
-  return str;
+  const strArray = str.split('');
+  const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+  const deciphered = strArray.map(function (ltr) {
+    const letterPosition = alphabet.indexOf(ltr);
+    let actualLetterPosition = letterPosition > 13 ? 13 - (26 - letterPosition) : letterPosition + 13;
+    if (actualLetterPosition === 26) actualLetterPosition = 0;
+    return letterPosition > -1 ? alphabet[actualLetterPosition] : ltr;
+  });
+
+  return deciphered.join('');
+
 }
