@@ -73,8 +73,18 @@ describe('Tech-Mex Tech Leveling', function () {
     const given = 'GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.';
     const expected = 'THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX.';
 
-    const deciphered =funcs.rot13(given);
+    const deciphered = funcs.rot13(given);
 
     assert.equal(expected, given);
+  });
+
+  it('should look through an array (first argument) and return the first element in the array that passes a truth test (second argument)', function () {
+    const givenArray = [1, 3, 5, 8, 9, 10];
+    const givenFunc = function(num) { return num % 2 === 0; };
+    const expected = 8;
+
+    const firstElement = funcs.findElement(givenArray, givenFunc);
+
+    assert.equal(expected, firstElement);
   });
 });
