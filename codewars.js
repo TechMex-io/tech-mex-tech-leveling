@@ -5,5 +5,14 @@ module.exports.spinWords = (str) => {
   return strArray.map(word => {
     return (word.length > 4) ? word.split('').reverse().join('') : word;
   }).join(' ');
-  
+}
+
+
+
+module.exports.towerBuilder = (nFloors) => {
+  const floors = [];
+  for (let i = 0; i < nFloors; i++) {
+    floors.push(' '.repeat(i) + '*'.repeat((nFloors * 2) - 1 - (i*2)) + ' '.repeat(i));
+  }
+  return floors.reverse();
 }
