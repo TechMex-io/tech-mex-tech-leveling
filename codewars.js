@@ -8,3 +8,8 @@ module.exports.spinWords = (str) => {
 module.exports.towerBuilder = (nFloors) => {
   return nFloors;
 }
+
+
+module.exports.makePairs = (str) => {
+  return str;
+}
