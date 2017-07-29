@@ -16,3 +16,9 @@ module.exports.towerBuilder = (nFloors) => {
   }
   return floors.reverse();
 }
+
+
+
+module.exports.makePairs = (str) => {
+  return str.length % 2 === 0 ? str.match(/.{1,2}/g) : `${str}_`.match(/.{1,2}/g);
+}
