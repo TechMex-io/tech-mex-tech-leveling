@@ -89,6 +89,19 @@ module.exports.rot13 = (str) => {
 }
 
 
+/* function rot13(str) {
+  var strArr = str.split('');
+  var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+  var phrased = strArr.map(function (letter, i) {
+    var letterPosition = alphabet.indexOf(letter) > 13 ? 13 - (26 - alphabet.indexOf(letter)) : alphabet.indexOf(letter) + 13;
+    if (letterPosition === 26) letterPosition = 0;
+    return alphabet.indexOf(letter) >= 0 ? alphabet[letterPosition] : letter;
+  });
+
+  return phrased.join('');
+} */
+
 
 module.exports.findElement = (arr, func) => {
   const num = arr.filter(function (n) {

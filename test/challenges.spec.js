@@ -86,4 +86,14 @@ describe('Tech-Mex Tech Leveling', function () {
 
     assert.equal(expected, deciphered);
   });
+
+  it('should look through an array (first argument) and return the first element in the array that passes a truth test (second argument)', function () {
+    const givenArray = [1, 3, 5, 8, 9, 10];
+    const givenFunc = function(num) { return num % 2 === 0; };
+    const expected = 8;
+
+    const firstElement = funcs.findElement(givenArray, givenFunc);
+
+    assert.equal(expected, firstElement);
+  });
 });
