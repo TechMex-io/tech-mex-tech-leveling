@@ -13,4 +13,8 @@ describe('Codewars challenge', function () {
     assert.equal(expected, spinWords);
   });
 
+  it('should buld a tower (array of asterisks) based on given number of floors', function () {
+    assert.equal(JSON.stringify(funcs.towerBuilder(3)), JSON.stringify(["  *  "," *** ","*****"]));
+  });
+
 });
