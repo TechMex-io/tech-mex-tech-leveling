@@ -37,3 +37,9 @@ module.exports.rot13 = (str) => {
 module.exports.findElement = (arr, func) => {
   return num;
 }
+
+
+
+module.exports.pairwise = (arr, arg) => {
+  return arg;
+}
