@@ -111,3 +111,11 @@ module.exports.findElement = (arr, func) => {
 }
 
 
+
+module.exports.pairwise = (arr, arg) => {
+  const findPairs = arr.reduce(num => {
+    return num > 10;
+  });
+  return findPairs;
+}
+

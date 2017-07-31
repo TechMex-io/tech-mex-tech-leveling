@@ -96,4 +96,14 @@ describe('Tech-Mex Tech Leveling', function () {
 
     assert.equal(expected, firstElement);
   });
+
+  it('finds element pairs whose sum equal the second argument arg and return the sum of their indices', () => {
+    const given1 = [7, 9, 11, 13, 15];
+    const given2 = 20;
+    const expected = 6;
+
+    const pairSum = funcs.pairwise(given1, given2);
+
+    assert.equal(expected, pairSum);
+  });
 });
