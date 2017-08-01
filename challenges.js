@@ -119,3 +119,10 @@ module.exports.pairwise = (arr, arg) => {
   return findPairs;
 }
 
+/* 
+  // for just in case. es6 only.
+  Object.entries(myObj).forEach(
+    ([key, value]) => arr.push({key: value})
+  );
+*/
+
