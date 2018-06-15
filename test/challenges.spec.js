@@ -97,4 +97,14 @@ describe('Tech-Mex Tech Leveling', function () {
 
     assert.equal(expected, pairSum);
   });
+
+  it('returns an array of arrays each of length size made of the given array', () => {
+    const given1 = [1,2,3,4];
+    const given2 = 2;
+    const expected = [[1,2], [3,4]];
+
+    const chunk = funcs.chunk(given1, given2);
+
+    assert.deepEqual(expected, chunk);
+  });
 });

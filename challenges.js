@@ -43,3 +43,8 @@ module.exports.findElement = (arr, func) => {
 module.exports.pairwise = (arr, arg) => {
   return arg;
 }
+
+
+module.exports.chunk = (arr, size) => {
+  return arr;
+}
